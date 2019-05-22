@@ -29,11 +29,16 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.FilterButton = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
             this.AddGood = new System.Windows.Forms.Button();
             this.EditGood = new System.Windows.Forms.Button();
             this.DropGood = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.FilterInput = new System.Windows.Forms.TextBox();
+            this.RId = new System.Windows.Forms.RadioButton();
+            this.RType = new System.Windows.Forms.RadioButton();
+            this.RModel = new System.Windows.Forms.RadioButton();
+            this.RMan = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,15 +58,6 @@
             this.dataGridView1.ShowEditingIcon = false;
             this.dataGridView1.Size = new System.Drawing.Size(443, 242);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // FilterButton
-            // 
-            this.FilterButton.Location = new System.Drawing.Point(607, 337);
-            this.FilterButton.Name = "FilterButton";
-            this.FilterButton.Size = new System.Drawing.Size(75, 23);
-            this.FilterButton.TabIndex = 2;
-            this.FilterButton.Text = "Фильтр";
-            this.FilterButton.UseVisualStyleBackColor = true;
             // 
             // Exit
             // 
@@ -103,32 +99,105 @@
             this.DropGood.UseVisualStyleBackColor = true;
             this.DropGood.Click += new System.EventHandler(this.DropGood_Click);
             // 
+            // SaveButton
+            // 
+            this.SaveButton.Location = new System.Drawing.Point(175, 337);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(75, 23);
+            this.SaveButton.TabIndex = 7;
+            this.SaveButton.Text = "Сохранить";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            // 
+            // FilterInput
+            // 
+            this.FilterInput.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.FilterInput.Location = new System.Drawing.Point(582, 166);
+            this.FilterInput.Name = "FilterInput";
+            this.FilterInput.Size = new System.Drawing.Size(104, 20);
+            this.FilterInput.TabIndex = 8;
+            this.FilterInput.Text = "Поиск...";
+            this.FilterInput.TextChanged += new System.EventHandler(this.FilterInput_TextChanged);
+            // 
+            // RId
+            // 
+            this.RId.AutoSize = true;
+            this.RId.Checked = true;
+            this.RId.Location = new System.Drawing.Point(582, 55);
+            this.RId.Name = "RId";
+            this.RId.Size = new System.Drawing.Size(66, 17);
+            this.RId.TabIndex = 9;
+            this.RId.TabStop = true;
+            this.RId.Text = "Артикул";
+            this.RId.UseVisualStyleBackColor = true;
+            // 
+            // RType
+            // 
+            this.RType.AutoSize = true;
+            this.RType.Location = new System.Drawing.Point(582, 78);
+            this.RType.Name = "RType";
+            this.RType.Size = new System.Drawing.Size(44, 17);
+            this.RType.TabIndex = 10;
+            this.RType.Text = "Тип";
+            this.RType.UseVisualStyleBackColor = true;
+            // 
+            // RModel
+            // 
+            this.RModel.AutoSize = true;
+            this.RModel.Location = new System.Drawing.Point(582, 101);
+            this.RModel.Name = "RModel";
+            this.RModel.Size = new System.Drawing.Size(64, 17);
+            this.RModel.TabIndex = 11;
+            this.RModel.Text = "Модель";
+            this.RModel.UseVisualStyleBackColor = true;
+            // 
+            // RMan
+            // 
+            this.RMan.AutoSize = true;
+            this.RMan.Location = new System.Drawing.Point(582, 124);
+            this.RMan.Name = "RMan";
+            this.RMan.Size = new System.Drawing.Size(104, 17);
+            this.RMan.TabIndex = 12;
+            this.RMan.Text = "Производитель";
+            this.RMan.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(781, 445);
+            this.Controls.Add(this.RMan);
+            this.Controls.Add(this.RModel);
+            this.Controls.Add(this.RType);
+            this.Controls.Add(this.RId);
+            this.Controls.Add(this.FilterInput);
+            this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.DropGood);
             this.Controls.Add(this.EditGood);
             this.Controls.Add(this.AddGood);
             this.Controls.Add(this.Exit);
-            this.Controls.Add(this.FilterButton);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button FilterButton;
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Button AddGood;
         private System.Windows.Forms.Button EditGood;
         private System.Windows.Forms.Button DropGood;
+        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.TextBox FilterInput;
+        private System.Windows.Forms.RadioButton RId;
+        private System.Windows.Forms.RadioButton RType;
+        private System.Windows.Forms.RadioButton RModel;
+        private System.Windows.Forms.RadioButton RMan;
     }
 }
 

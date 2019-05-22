@@ -15,17 +15,23 @@ namespace WindowsFormsApp1
     public partial class Form1 : Form
     {
         public static WGoodContainer container = new WGoodContainer();
+        private DataTable dt;
         public Form1()
         {
             InitializeComponent();
-
+            dt = new DataTable();
             container.load();
-            dataGridView1.Columns.Add("GId", "Артикул");
-            dataGridView1.Columns.Add("GType", "Тип");
-            dataGridView1.Columns.Add("GModle", "Модель");
-            dataGridView1.Columns.Add("GManufacturer", "Производитель");
+            CreateHeaders();
             RefillTable();
 
+        }
+
+        private void CreateHeaders()
+        {
+            dt.Columns.Add("Артикул", typeof(int));
+            dt.Columns.Add("Тип", typeof(string));
+            dt.Columns.Add("Модель", typeof(string));
+            dt.Columns.Add("Производитель", typeof(string));
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -41,16 +47,20 @@ namespace WindowsFormsApp1
 
         public void RefillTable()
         {
-            dataGridView1.Rows.Clear();
-            dataGridView1.Refresh();
+            BindingSource bs = new BindingSource();
+
+            dt.Rows.Clear();
             foreach (var good in container.getGoods())
             {
                 int id = good.getId();
                 string type = good.getType();
                 string model = good.getModel();
                 string man = good.getManufacturer();
-                dataGridView1.Rows.Add(id, type, model, man);
+                dt.Rows.Add(new object[] { id, type, model, man });
             }
+
+            bs.DataSource = dt;
+            dataGridView1.DataSource = bs;
         }
 
         private void EditGood_Click(object sender, EventArgs e)
@@ -70,6 +80,32 @@ namespace WindowsFormsApp1
             id = (int)dataGridView1.SelectedCells[0].Value;
             container.drop_by_id(id);
             RefillTable();
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            container.save();
+        }
+
+        private void Search(object sender, EventArgs e, string attribute, string query)
+        {
+            dt.DefaultView.RowFilter = $"Convert({attribute}, 'System.String') LIKE '%{query}%'";
+        }
+
+        private void FilterInput_TextChanged(object sender, EventArgs e)
+        {
+            string attribute, query;
+            if (RId.Checked)
+                attribute = "Артикул";
+            else if (RType.Checked)
+                attribute = "Тип";
+            else if (RModel.Checked)
+                attribute = "Модель";
+            else
+                attribute = "Производитель";
+
+            query = FilterInput.Text;
+            Search(sender, e, attribute, query);
         }
     }
 }
