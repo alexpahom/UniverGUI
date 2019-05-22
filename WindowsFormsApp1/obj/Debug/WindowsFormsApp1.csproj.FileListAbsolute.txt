@@ -1,0 +1,28 @@
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Wrapper.dll
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Wrapper.pdb
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\pakhomchikai\Documents\Visual Studio 2017\Projects\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GoodPartial.resources
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Wrapper.dll
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Wrapper.pdb
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GoodPartial.resources
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
