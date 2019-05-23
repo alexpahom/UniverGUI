@@ -61,9 +61,9 @@
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(43, 337);
+            this.Exit.Location = new System.Drawing.Point(511, 298);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(94, 23);
+            this.Exit.Size = new System.Drawing.Size(104, 23);
             this.Exit.TabIndex = 3;
             this.Exit.Text = "Exit";
             this.Exit.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@
             // 
             this.DropGood.Location = new System.Drawing.Point(282, 298);
             this.DropGood.Name = "DropGood";
-            this.DropGood.Size = new System.Drawing.Size(105, 23);
+            this.DropGood.Size = new System.Drawing.Size(96, 23);
             this.DropGood.TabIndex = 6;
             this.DropGood.Text = "Delete";
             this.DropGood.UseVisualStyleBackColor = true;
@@ -101,9 +101,9 @@
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(411, 298);
+            this.SaveButton.Location = new System.Drawing.Point(405, 298);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(75, 23);
+            this.SaveButton.Size = new System.Drawing.Size(81, 23);
             this.SaveButton.TabIndex = 7;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
@@ -112,7 +112,7 @@
             // FilterInput
             // 
             this.FilterInput.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.FilterInput.Location = new System.Drawing.Point(537, 161);
+            this.FilterInput.Location = new System.Drawing.Point(511, 172);
             this.FilterInput.Name = "FilterInput";
             this.FilterInput.Size = new System.Drawing.Size(104, 20);
             this.FilterInput.TabIndex = 8;
@@ -123,7 +123,7 @@
             // 
             this.RId.AutoSize = true;
             this.RId.Checked = true;
-            this.RId.Location = new System.Drawing.Point(537, 50);
+            this.RId.Location = new System.Drawing.Point(511, 61);
             this.RId.Name = "RId";
             this.RId.Size = new System.Drawing.Size(93, 17);
             this.RId.TabIndex = 9;
@@ -134,7 +134,7 @@
             // RType
             // 
             this.RType.AutoSize = true;
-            this.RType.Location = new System.Drawing.Point(537, 73);
+            this.RType.Location = new System.Drawing.Point(511, 84);
             this.RType.Name = "RType";
             this.RType.Size = new System.Drawing.Size(49, 17);
             this.RType.TabIndex = 10;
@@ -144,7 +144,7 @@
             // RModel
             // 
             this.RModel.AutoSize = true;
-            this.RModel.Location = new System.Drawing.Point(537, 96);
+            this.RModel.Location = new System.Drawing.Point(511, 107);
             this.RModel.Name = "RModel";
             this.RModel.Size = new System.Drawing.Size(54, 17);
             this.RModel.TabIndex = 11;
@@ -154,7 +154,7 @@
             // RMan
             // 
             this.RMan.AutoSize = true;
-            this.RMan.Location = new System.Drawing.Point(537, 119);
+            this.RMan.Location = new System.Drawing.Point(511, 130);
             this.RMan.Name = "RMan";
             this.RMan.Size = new System.Drawing.Size(88, 17);
             this.RMan.TabIndex = 12;
@@ -165,7 +165,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 406);
+            this.ClientSize = new System.Drawing.Size(686, 374);
             this.Controls.Add(this.RMan);
             this.Controls.Add(this.RModel);
             this.Controls.Add(this.RType);

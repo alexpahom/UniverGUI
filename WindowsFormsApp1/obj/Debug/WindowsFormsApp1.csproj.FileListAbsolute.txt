@@ -29,7 +29,6 @@ E:\Универ\2 курс 4 сем\Языки программиования\К
 D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
 D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\bin\Debug\Wrapper.pdb
 D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
 D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GoodPartial.resources
