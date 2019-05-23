@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 using Wrapper;
 
 namespace WindowsFormsApp1
@@ -23,15 +24,17 @@ namespace WindowsFormsApp1
             container.load();
             CreateHeaders();
             RefillTable();
-
+            FilterInput.KeyPress += new KeyPressEventHandler(FilterInput_KeyPressed);
+            FilterInput.GotFocus += new EventHandler(HidePlaceholder);
+            FilterInput.LostFocus += new EventHandler(ShowPlaceholder);
         }
 
         private void CreateHeaders()
         {
-            dt.Columns.Add("Артикул", typeof(int));
-            dt.Columns.Add("Тип", typeof(string));
-            dt.Columns.Add("Модель", typeof(string));
-            dt.Columns.Add("Производитель", typeof(string));
+            dt.Columns.Add("Stock Number", typeof(int));
+            dt.Columns.Add("Type", typeof(string));
+            dt.Columns.Add("Model", typeof(string));
+            dt.Columns.Add("Manufacturer", typeof(string));
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -65,9 +68,7 @@ namespace WindowsFormsApp1
 
         private void EditGood_Click(object sender, EventArgs e)
         {
-            // TODO: No rows selected validation
-            int id;
-            id = (int)dataGridView1.SelectedCells[0].Value;
+            int id = (int)dataGridView1.SelectedCells[0].Value;
             GoodPartial partial = new GoodPartial(this);
             partial.Show();
             partial.Edit(id);
@@ -75,9 +76,7 @@ namespace WindowsFormsApp1
 
         private void DropGood_Click(object sender, EventArgs e)
         {
-            // TODO: Empty selection validation
-            int id;
-            id = (int)dataGridView1.SelectedCells[0].Value;
+            int id = (int)dataGridView1.SelectedCells[0].Value;
             container.drop_by_id(id);
             RefillTable();
         }
@@ -89,23 +88,52 @@ namespace WindowsFormsApp1
 
         private void Search(object sender, EventArgs e, string attribute, string query)
         {
-            dt.DefaultView.RowFilter = $"Convert({attribute}, 'System.String') LIKE '%{query}%'";
+            dt.DefaultView.RowFilter = $"Convert([{attribute}], 'System.String') LIKE '%{query}%'";
         }
 
         private void FilterInput_TextChanged(object sender, EventArgs e)
         {
             string attribute, query;
             if (RId.Checked)
-                attribute = "Артикул";
+                attribute = "Stock Number";
             else if (RType.Checked)
-                attribute = "Тип";
+                attribute = "Type";
             else if (RModel.Checked)
-                attribute = "Модель";
+                attribute = "Model";
             else
-                attribute = "Производитель";
+                attribute = "Manufacturer";
 
             query = FilterInput.Text;
             Search(sender, e, attribute, query);
+        }
+
+        private void FilterInput_KeyPressed(object sender, KeyPressEventArgs e)
+        {
+            var regex = new Regex("%|'");
+            if (regex.IsMatch(e.KeyChar.ToString()))
+                e.Handled = true;
+        }
+
+        private void ShowPlaceholder(object sender, EventArgs e)
+        {
+            if(FilterInput.Text == "")
+            {
+                FilterInput.TextChanged -= new EventHandler(FilterInput_TextChanged);
+                FilterInput.ForeColor = SystemColors.ScrollBar;
+                FilterInput.Text = "Search...";
+                FilterInput.TextChanged += new EventHandler(FilterInput_TextChanged);
+            }
+        }
+
+        private void HidePlaceholder(object sender, EventArgs e)
+        {
+            if(FilterInput.Text == "Search...")
+            {
+                FilterInput.TextChanged -= new EventHandler(FilterInput_TextChanged);
+                FilterInput.ForeColor = SystemColors.WindowText;
+                FilterInput.Text = "";
+                FilterInput.TextChanged += new EventHandler(FilterInput_TextChanged);
+            }
         }
     }
 }

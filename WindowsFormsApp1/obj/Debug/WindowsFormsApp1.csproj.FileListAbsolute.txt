@@ -26,3 +26,16 @@ E:\Универ\2 курс 4 сем\Языки программиования\К
 E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 E:\Универ\2 курс 4 сем\Языки программиования\Курсовая\test GUI\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\bin\Debug\Wrapper.pdb
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.GoodPartial.resources
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Garbage\универ\2 курс 4 сем\Языки программирования\Kurs\UniverGUI\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

@@ -43,7 +43,7 @@
             // 
             // IdTextBox
             // 
-            this.IdTextBox.Location = new System.Drawing.Point(199, 50);
+            this.IdTextBox.Location = new System.Drawing.Point(159, 40);
             this.IdTextBox.Name = "IdTextBox";
             this.IdTextBox.Size = new System.Drawing.Size(105, 20);
             this.IdTextBox.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // ManTextBox
             // 
-            this.ManTextBox.Location = new System.Drawing.Point(199, 214);
+            this.ManTextBox.Location = new System.Drawing.Point(159, 204);
             this.ManTextBox.Name = "ManTextBox";
             this.ManTextBox.Size = new System.Drawing.Size(105, 20);
             this.ManTextBox.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             // ModelTextBox
             // 
-            this.ModelTextBox.Location = new System.Drawing.Point(199, 159);
+            this.ModelTextBox.Location = new System.Drawing.Point(159, 149);
             this.ModelTextBox.Name = "ModelTextBox";
             this.ModelTextBox.Size = new System.Drawing.Size(105, 20);
             this.ModelTextBox.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // TypeTextBox
             // 
-            this.TypeTextBox.Location = new System.Drawing.Point(199, 104);
+            this.TypeTextBox.Location = new System.Drawing.Point(159, 94);
             this.TypeTextBox.Name = "TypeTextBox";
             this.TypeTextBox.Size = new System.Drawing.Size(105, 20);
             this.TypeTextBox.TabIndex = 3;
@@ -76,65 +76,65 @@
             // LId
             // 
             this.LId.AutoSize = true;
-            this.LId.Location = new System.Drawing.Point(107, 53);
+            this.LId.Location = new System.Drawing.Point(56, 43);
             this.LId.Name = "LId";
-            this.LId.Size = new System.Drawing.Size(48, 13);
+            this.LId.Size = new System.Drawing.Size(75, 13);
             this.LId.TabIndex = 4;
-            this.LId.Text = "Артикул";
+            this.LId.Text = "Stock Number";
             // 
             // LType
             // 
             this.LType.AutoSize = true;
-            this.LType.Location = new System.Drawing.Point(107, 107);
+            this.LType.Location = new System.Drawing.Point(56, 97);
             this.LType.Name = "LType";
-            this.LType.Size = new System.Drawing.Size(26, 13);
+            this.LType.Size = new System.Drawing.Size(31, 13);
             this.LType.TabIndex = 5;
-            this.LType.Text = "Тип";
+            this.LType.Text = "Type";
             // 
             // LModel
             // 
             this.LModel.AutoSize = true;
-            this.LModel.Location = new System.Drawing.Point(107, 162);
+            this.LModel.Location = new System.Drawing.Point(56, 152);
             this.LModel.Name = "LModel";
-            this.LModel.Size = new System.Drawing.Size(46, 13);
+            this.LModel.Size = new System.Drawing.Size(36, 13);
             this.LModel.TabIndex = 6;
-            this.LModel.Text = "Модель";
+            this.LModel.Text = "Model";
             // 
             // LMan
             // 
             this.LMan.AutoSize = true;
-            this.LMan.Location = new System.Drawing.Point(107, 217);
+            this.LMan.Location = new System.Drawing.Point(56, 207);
             this.LMan.Name = "LMan";
-            this.LMan.Size = new System.Drawing.Size(86, 13);
+            this.LMan.Size = new System.Drawing.Size(70, 13);
             this.LMan.TabIndex = 7;
-            this.LMan.Text = "Производитель";
+            this.LMan.Text = "Manufacturer";
             // 
             // BUpdate
             // 
-            this.BUpdate.Location = new System.Drawing.Point(110, 330);
+            this.BUpdate.Location = new System.Drawing.Point(59, 316);
             this.BUpdate.Name = "BUpdate";
             this.BUpdate.Size = new System.Drawing.Size(75, 23);
             this.BUpdate.TabIndex = 8;
-            this.BUpdate.Text = "Сохранить";
+            this.BUpdate.Text = "Save";
             this.BUpdate.UseVisualStyleBackColor = true;
             this.BUpdate.Click += new System.EventHandler(this.BUpdate_Click);
             // 
             // BCancel
             // 
-            this.BCancel.Location = new System.Drawing.Point(229, 330);
+            this.BCancel.Location = new System.Drawing.Point(178, 316);
             this.BCancel.Name = "BCancel";
             this.BCancel.Size = new System.Drawing.Size(75, 23);
             this.BCancel.TabIndex = 9;
-            this.BCancel.Text = "Отмена";
+            this.BCancel.Text = "Cancel";
             this.BCancel.UseVisualStyleBackColor = true;
             this.BCancel.Click += new System.EventHandler(this.BCancel_Click);
             // 
             // LError
             // 
             this.LError.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.LError.Location = new System.Drawing.Point(36, 271);
+            this.LError.Location = new System.Drawing.Point(9, 260);
             this.LError.Name = "LError";
-            this.LError.Size = new System.Drawing.Size(375, 23);
+            this.LError.Size = new System.Drawing.Size(309, 23);
             this.LError.TabIndex = 10;
             this.LError.Text = "Трололо";
             this.LError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 421);
+            this.ClientSize = new System.Drawing.Size(324, 377);
             this.Controls.Add(this.LError);
             this.Controls.Add(this.BCancel);
             this.Controls.Add(this.BUpdate);

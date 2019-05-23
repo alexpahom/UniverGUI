@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
             id = IdParse(sender, e);
             if (id <= 0)
             {
-                LError.Text = "Артикул должен быть положительным";
+                LError.Text = "Stock Number should be positive";
                 LError.Visible = true;
                 return;
             }
@@ -45,12 +45,12 @@ namespace WindowsFormsApp1
             manufacturer = ManTextBox.Text;
             if (!IsIdValid(id) && !editMode)
             {
-                LError.Text = "Указанный артикул уже существует!";
+                LError.Text = "Given Stock Number already exists";
                 LError.Visible = true;
             }
             else if (!IsStringValid(type) || !IsStringValid(model) || !IsStringValid(manufacturer))
             {
-                LError.Text = "Тип / Модель / Производитель не может быть пустым!";
+                LError.Text = "Type / Model / Manufacturer cannot be empty";
                 LError.Visible = true;
             }
             else
@@ -111,7 +111,7 @@ namespace WindowsFormsApp1
             }
             catch (FormatException)
             {
-                LError.Text = "Артикул должен быть числом";
+                LError.Text = "Stock Number should be an integer";
                 LError.Visible = true;
                 return id;
             }

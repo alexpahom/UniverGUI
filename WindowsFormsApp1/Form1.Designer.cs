@@ -63,9 +63,9 @@
             // 
             this.Exit.Location = new System.Drawing.Point(43, 337);
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(75, 23);
+            this.Exit.Size = new System.Drawing.Size(94, 23);
             this.Exit.TabIndex = 3;
-            this.Exit.Text = "Выход";
+            this.Exit.Text = "Exit";
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
@@ -73,99 +73,99 @@
             // 
             this.AddGood.Location = new System.Drawing.Point(43, 298);
             this.AddGood.Name = "AddGood";
-            this.AddGood.Size = new System.Drawing.Size(114, 23);
+            this.AddGood.Size = new System.Drawing.Size(94, 23);
             this.AddGood.TabIndex = 4;
-            this.AddGood.Text = "Добавить";
+            this.AddGood.Text = "Create";
             this.AddGood.UseVisualStyleBackColor = true;
             this.AddGood.Click += new System.EventHandler(this.AddGood_Click);
             // 
             // EditGood
             // 
-            this.EditGood.Location = new System.Drawing.Point(175, 298);
+            this.EditGood.Location = new System.Drawing.Point(160, 298);
             this.EditGood.Name = "EditGood";
-            this.EditGood.Size = new System.Drawing.Size(114, 23);
+            this.EditGood.Size = new System.Drawing.Size(98, 23);
             this.EditGood.TabIndex = 5;
-            this.EditGood.Text = "Редактировать";
+            this.EditGood.Text = "Edit";
             this.EditGood.UseVisualStyleBackColor = true;
             this.EditGood.Click += new System.EventHandler(this.EditGood_Click);
             // 
             // DropGood
             // 
-            this.DropGood.Location = new System.Drawing.Point(308, 298);
+            this.DropGood.Location = new System.Drawing.Point(282, 298);
             this.DropGood.Name = "DropGood";
-            this.DropGood.Size = new System.Drawing.Size(114, 23);
+            this.DropGood.Size = new System.Drawing.Size(105, 23);
             this.DropGood.TabIndex = 6;
-            this.DropGood.Text = "Удалить";
+            this.DropGood.Text = "Delete";
             this.DropGood.UseVisualStyleBackColor = true;
             this.DropGood.Click += new System.EventHandler(this.DropGood_Click);
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(175, 337);
+            this.SaveButton.Location = new System.Drawing.Point(411, 298);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
             this.SaveButton.TabIndex = 7;
-            this.SaveButton.Text = "Сохранить";
+            this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // FilterInput
             // 
             this.FilterInput.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.FilterInput.Location = new System.Drawing.Point(582, 166);
+            this.FilterInput.Location = new System.Drawing.Point(537, 161);
             this.FilterInput.Name = "FilterInput";
             this.FilterInput.Size = new System.Drawing.Size(104, 20);
             this.FilterInput.TabIndex = 8;
-            this.FilterInput.Text = "Поиск...";
+            this.FilterInput.Text = "Search...";
             this.FilterInput.TextChanged += new System.EventHandler(this.FilterInput_TextChanged);
             // 
             // RId
             // 
             this.RId.AutoSize = true;
             this.RId.Checked = true;
-            this.RId.Location = new System.Drawing.Point(582, 55);
+            this.RId.Location = new System.Drawing.Point(537, 50);
             this.RId.Name = "RId";
-            this.RId.Size = new System.Drawing.Size(66, 17);
+            this.RId.Size = new System.Drawing.Size(93, 17);
             this.RId.TabIndex = 9;
             this.RId.TabStop = true;
-            this.RId.Text = "Артикул";
+            this.RId.Text = "Stock Number";
             this.RId.UseVisualStyleBackColor = true;
             // 
             // RType
             // 
             this.RType.AutoSize = true;
-            this.RType.Location = new System.Drawing.Point(582, 78);
+            this.RType.Location = new System.Drawing.Point(537, 73);
             this.RType.Name = "RType";
-            this.RType.Size = new System.Drawing.Size(44, 17);
+            this.RType.Size = new System.Drawing.Size(49, 17);
             this.RType.TabIndex = 10;
-            this.RType.Text = "Тип";
+            this.RType.Text = "Type";
             this.RType.UseVisualStyleBackColor = true;
             // 
             // RModel
             // 
             this.RModel.AutoSize = true;
-            this.RModel.Location = new System.Drawing.Point(582, 101);
+            this.RModel.Location = new System.Drawing.Point(537, 96);
             this.RModel.Name = "RModel";
-            this.RModel.Size = new System.Drawing.Size(64, 17);
+            this.RModel.Size = new System.Drawing.Size(54, 17);
             this.RModel.TabIndex = 11;
-            this.RModel.Text = "Модель";
+            this.RModel.Text = "Model";
             this.RModel.UseVisualStyleBackColor = true;
             // 
             // RMan
             // 
             this.RMan.AutoSize = true;
-            this.RMan.Location = new System.Drawing.Point(582, 124);
+            this.RMan.Location = new System.Drawing.Point(537, 119);
             this.RMan.Name = "RMan";
-            this.RMan.Size = new System.Drawing.Size(104, 17);
+            this.RMan.Size = new System.Drawing.Size(88, 17);
             this.RMan.TabIndex = 12;
-            this.RMan.Text = "Производитель";
+            this.RMan.Text = "Manufacturer";
             this.RMan.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 445);
+            this.ClientSize = new System.Drawing.Size(686, 406);
             this.Controls.Add(this.RMan);
             this.Controls.Add(this.RModel);
             this.Controls.Add(this.RType);
