@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Wrapper;
 
@@ -23,31 +16,41 @@ namespace WindowsFormsApp1
             editMode = false;
         }
 
+        // Обработка нажатия кнопки отмена
         private void BCancel_Click(object sender, EventArgs e)
         {
             Close();
         }
 
+        // Обработка нажатия кнопки сохранения
         private void BUpdate_Click(object sender, EventArgs e)
         {
             int id;
             string type, model, manufacturer;
 
+            // Проверка, является ли ID числом
             id = IdParse(sender, e);
+
+            // Проверка на положительность
             if (id <= 0)
             {
                 LError.Text = "Stock Number should be positive";
                 LError.Visible = true;
                 return;
             }
+
+            // Сбор строковых данных
             type = TypeTextBox.Text;
             model = ModelTextBox.Text;
             manufacturer = ManTextBox.Text;
+
+            // Проверка на уникальность ID, в случае создания новой записи
             if (!IsIdValid(id) && !editMode)
             {
                 LError.Text = "Given Stock Number already exists";
                 LError.Visible = true;
             }
+            // Проверка есть ли пустые строки
             else if (!IsStringValid(type) || !IsStringValid(model) || !IsStringValid(manufacturer))
             {
                 LError.Text = "Type / Model / Manufacturer cannot be empty";
@@ -55,6 +58,7 @@ namespace WindowsFormsApp1
             }
             else
             {
+                // Сохранение или редактирование
                 WGood good = new WGood(id, type, model, manufacturer);
                 if (editMode)
                 {
@@ -70,17 +74,20 @@ namespace WindowsFormsApp1
             
         }
 
+        // Создание новой записи
         private void CreateGood(WGood good)
         {
             Form1.container.add(good);
         }
 
+        // Редактирование существующей записи
         private void UpdateGood(WGood good)
         {
             Form1.container.drop_by_id(good.getId());
             Form1.container.add(good);
         }
 
+        // Автозаполение полей ввода в случае редактирования
         public void Edit(int id)
         {
             editMode = true;
@@ -93,15 +100,20 @@ namespace WindowsFormsApp1
             ManTextBox.Text = good.getManufacturer();
         }
 
+        // Вызов метода проверки на уникальность ID
         private bool IsIdValid(int id) => Form1.container.is_id_unique(id);
 
+
+        // Проверка пустая ли строка
         private bool IsStringValid(string s)  => s != "";
 
+        // Сброс сообщения с ошибкой в случае изменения содержимого любого текстового поля
         private void Good_Partial_TextChanged(object sender, EventArgs e)
         {
             LError.Visible = false;
         }
 
+        // Проверка, является ли введенное ID числом
         private int IdParse(object sender, EventArgs e)
         {
             int id = 0;
